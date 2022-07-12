@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+      <link rel="stylesheet" href="/src/css/stylesheet.css" type="text/css">
+      <link rel="stylesheet" href="/src/css/lightbox.min.css" type="text/css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+      <link href="//db.onlinewebfonts.com/c/e27d3314ddf0d6e702011c5dc3dd1fa7?family=Steelfish" rel="stylesheet" type="text/css"/>
+      
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+      
+      <title> Caya Fotografie </title>
+    </head>
+
+
+    <body>
+      <div class="navigation">
+        <div class="navigation-title "> 
+          <h3 class="core-text title-text core-text-font">
+            Caya
+          </h3>
+          <div class="navigation"> 
+            <a href="/index.html"> <img src="/src/images/logo.png"> </a> 
+          </div>
+          <h3 class="core-text title-text">
+            Fotografie
+          </h3>
+        </div>
+
+        <div class="navigation-title-mobile"> 
+          <div class="navigation"> 
+            <a href="/index.html"> <img src="/src/images/logo.png"> </a> 
+          </div>
+          <h3 class="core-text title-text">
+            Caya Fotografie
+          </h3>
+        </div>
+
+
+        <div class="navigation-bar">  
+            <ul class="navigation-item-list">
+              <li class="navigation-item"><a href="/index.html" class="core-text navigation-text core-text-font"> Home </a></li>
+              <li class="navigation-item"><a href="/pages/aboutMe.html" class="core-text  navigation-text core-text-font"> Über mich </a></li>
+              <li class="navigation-item"><a href="/pages/contact.html" class="core-text navigation-text core-text-font"> Kontakt </a></li>
+              <!-- <li class="navigation-item"><a href="/pages/portfolio.html" class="core-text  navigation-text core-text-font"> Portfolio </a></li> -->
+            </ul>
+        </div>            
+      </div>
+
+      <div class="main-frame" >
+        <h2 class="contact-text core-text-font"> Kontaktiere mich! </h2>
+        <div class="contact-form">
+            <iframe src="/kontakt.php" id="idIframe" onload="iframeLoaded()" style="border: none; width: 100%;" allowfullscreen scrolling="no"> </iframe>
+        </div>
+      </div>
+
+
+        <!-- <footer>
+            <div class="createdby">
+                <p> Copyright &copy;<script>document.write(new Date().getFullYear())</script>, Michael Wernitz</p>
+           </div>
+        </footer> -->
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+      <script type="text/javascript">
+          function iframeLoaded() {
+              var iFrameID = document.getElementById('idIframe');
+              if(iFrameID) {
+
+                    iFrameID.height = "";
+                    iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+              }
+          }
+          if (top != self)
+            top.location = self.location;
+        </script>
+    </body>
+</html>

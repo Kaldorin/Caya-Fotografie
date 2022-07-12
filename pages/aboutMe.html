@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="/src/css/stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="/src/css/lightbox.min.css" type="text/css">
+        <link rel="stylesheet" href="/src/css/animations.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link href="//db.onlinewebfonts.com/c/e27d3314ddf0d6e702011c5dc3dd1fa7?family=Steelfish" rel="stylesheet" type="text/css"/>
+        
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        
+        <title> Caya Fotografie </title>
+    </head>
+
+    <body>
+      <div class="navigation">
+        <div class="navigation-bar">  
+          <ul class="navigation-item-list-left">
+            <li class="navigation-item"><a href="/pages/portfolio.html" class="core-text  navigation-text core-text-font"> Portfolio </a></li> 
+          </ul>
+
+          <a href="/index.html"> <img src="/src/images/logo.png"> </a>
+
+          <ul class="navigation-item-list-right">
+            <li class="navigation-item"><a href="/pages/aboutMe.html" class="core-text  navigation-text core-text-font"> Über mich </a></li> 
+          </ul>
+
+      </div>   
+
+        <div class="navigation-title-mobile"> 
+          <div class="navigation"> 
+            <a href="/index.html"> <img src="/src/images/logo.png"> </a> 
+          </div>
+          <h3 class="core-text title-text">
+            Caya Fotografie
+          </h3>
+        </div>
++
+      </div>
+
+        <div class="main-frame">
+          <div class="profile">
+            <div class="profile-pic">
+              <img class="scale-in-hor-center" src="/src/images/profpic.png" alt="profile-picture">
+            </div>
+
+            <div class="profile-text">
+              <h1 class="core-text-font"> Über Mich!</h1>
+              <h3 class="core-text-font">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </h3>
+            </div>
+          </div>
+
+          <h2 class="contact-text core-text-font"> Kontaktiere mich! </h2>
+          <div class="contact-form">
+              <iframe src="/kontakt.php" id="idIframe" onload="iframeLoaded()" style="border: none; width: 100%;" allowfullscreen scrolling="no"> </iframe>          
+          </div>
+
+          
+
+
+        </div>
+        
+      <script src="/src/scripts/main.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+      <script type="text/javascript">
+          function iframeLoaded() {
+              var iFrameID = document.getElementById('idIframe');
+              if(iFrameID) {
+
+                    iFrameID.height = "";
+                    iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+              }
+          }
+          if (top != self)
+            top.location = self.location;
+        </script>
+    </body>
+</html>

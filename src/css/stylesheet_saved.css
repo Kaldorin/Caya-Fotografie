@@ -1,0 +1,362 @@
+body{
+    display: relative;
+    margin: 0px;
+    height: 100vh;
+}
+
+.navigation{
+    display: flex;
+    flex: 100%;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    height: 150px;
+}
+
+.navigation-mobile{
+    display: none;
+    flex: 100%;
+    height: 150px;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.nav-title{
+  display:inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.text-style-title{
+  background-color:transparent;
+  color:black;
+  opacity: 0.85;
+  font-family: "Sofia";
+  font-size: 75px;
+}
+
+.nav-item{
+    display:inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 120px;
+    margin-top: 90px;
+}
+
+.nav-item-text{
+  color:black;
+  opacity: 0.85;
+  font-family: "Sofia";
+  font-size: 25px;
+}
+
+.item-link{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    align-self: center;
+    margin-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 200px;
+    height: auto;
+    align-self: center;
+}
+
+.logo-mobile{
+  display: flex;
+  height: 60px;
+  width: auto;
+}
+
+.option-button{
+  padding-left: 15px;
+}
+
+.main-frame{
+  display: flex;
+  flex: 100%;
+  flex-direction: column;
+  height: wrap-content;
+}
+
+.main-frame-picture{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  height: 600px; 
+}
+
+.profile{
+  display: flex;
+  flex: 100%;
+  flex-direction: row;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.profil-pic{
+  display: inline-block;
+}
+
+.profil-pic img{
+    width: 500px;
+    height: 400px;
+    background-blend-mode: screen;
+    border: 5xp;
+    border-color: rgb(110, 110, 110);
+    box-shadow: rgb(104, 103, 103) 0px 0px 10px;
+}
+
+.profil-text{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+    text-align: block;
+    margin: 100px;
+    color: black;
+}
+
+
+/* Mobile */
+header .mobile{
+    display: none;
+}
+
+/*ausgeählter Link*/
+a:active{
+   color: white;
+}
+/*hovering */
+a:hover{
+    text-decoration: none;
+}
+
+/* PORTFOLIO */
+.row{
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2px;
+    overflow: hidden;
+}
+
+.column{
+    max-width: 32%;
+    padding: 0 2px;
+    overflow: hidden;
+}
+
+.column a img{
+    transition: transform .6s;
+    margin-top: 2px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column a img:hover{
+    opacity: 0.5;
+    transform: scale(0.98);
+}
+
+
+/* Kontaktformular */
+.main-frame-contact{
+  display: flex;
+  flex: 100%;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.contact-form{
+  height: 1200px;
+}
+
+
+.contact-text{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    color: black;
+}
+
+/* FOOTER 
+footer{
+    display: 20%;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.createdby{
+    padding: 0px;
+    font-size: 10px;
+    color: rgba(102, 100, 100, 0.795);
+}
+
+footer button{
+    border: none;
+    background: round;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+footer button img{
+    height: 15px;
+}
+*/
+.option-button{
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-mobile{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+/*mobile version*/
+/*
+@media screen and (max-width: 1000px){
+    .navigation{
+      display: none;
+    }
+    .navigation-mobile{
+      display: flex;
+    }
+    .navbar-mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-style-title{
+      font-size: 40px;
+    }
+    .nav-title{
+      padding-left: 45px;
+      padding-right: 45px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .logo-mobile{
+      right: 0;
+    }
+    .option-button{
+      left: 0;
+    }
+    .nav-item{
+      margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navigation{
+      display: none;
+    }
+    .navigation-mobile{
+      display: flex;
+    }
+    .navbar-mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-style-title{
+      font-size: 40px;
+    }
+    .nav-title{
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+    .logo-mobile{
+      height: 80px;
+      padding-right: 20px;
+    }
+    .option-button{
+      padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .navigation{
+      display: none;
+    }
+    .navigation-mobile{
+      display: flex;
+    }
+    .navbar-mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-style-title{
+      font-size: 30px;
+    }
+    .nav-title{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .logo-mobile{
+      height: 80px;
+      margin-right: 10px;
+    }
+    .option-button{
+      margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    .navigation{
+      display: none;
+    }
+    .navigation-mobile{
+      display: flex;
+    }
+    .navbar-mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-style-title{
+      font-size: 10px;
+    }
+    .nav-title{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .logo-mobile{
+      height: 50px;
+      padding-right: 15px;
+    }
+    .option-button{
+      padding-left: 20px;
+    }
+}
+
+*/
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="/src/css/stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="/src/css/lightbox.min.css" type="text/css">
+        <link href="//db.onlinewebfonts.com/c/e27d3314ddf0d6e702011c5dc3dd1fa7?family=Steelfish" rel="stylesheet" type="text/css"/>
+        <title> Caya Fotografie </title>
+    </head>
+
+    
+    <body>
+      <div class="navigation" >
+        <div class="navigation-bar">  
+              <ul class="navigation-item-list-left">
+                <li class="navigation-item"><a href="/pages/portfolio.html" class="core-text  navigation-text core-text-font"> Portfolio </a></li> 
+              </ul>
+
+              <a href="/index.html"> <img src="/src/images/logo.png"> </a>
+
+              <ul class="navigation-item-list-right">
+                <li class="navigation-item"><a href="/pages/aboutMe.html" class="core-text  navigation-text core-text-font"> Über mich </a></li> 
+              </ul>
+
+          </div>   
+      </div>
+
+      <div class="main-frame" >
+        <div class="portfolio">
+          <div class="row">
+              <div class="column">
+                  <a href="/src/images/mp10.png" data-lightbox="weddingMP1" > <img src="/src/images/mp10.png" loading="lazy" alt="Wedding"> </a>
+                  <a href="/src/images/mp21.png" data-lightbox="weddingMP2"><img src="/src/images/mp21.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp13.png" data-lightbox="weddingMP1" ><img src="/src/images/mp13.png" loading="lazy" alt="Wedding"> </a>
+                  <a href="/src/images/mp23.png" data-lightbox="weddingMP2"><img src="/src/images/mp23.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp26.png" data-lightbox="weddingMP2"><img src="/src/images/mp26.png" loading="lazy" alt="Wedding"></a>
+              </div>
+              <div class="column">
+                  <a href="/src/images/mp31.png" data-lightbox="weddingMP3"><img src="/src/images/mp31.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/np10.png" data-lightbox="casual"><img src="/src/images/np10.png" loading="lazy" alt="Casual"></a>
+                  <a href="/src/images/np11.png" data-lightbox="casual"><img src="/src/images/np11.png" loading="lazy" alt="Casual"></a>
+                  <a href="/src/images/mp11.png" data-lightbox="weddingMP1" ><img src="/src/images/mp11.png" loading="lazy" alt="Wedding"> </a>
+                  <a href="/src/images/np12.png" data-lightbox="casual"><img src="/src/images/np12.png" loading="lazy" alt="Casual"></a>
+              </div>
+              <div class="column">
+                  <a href="/src/images/mp20.png" data-lightbox="weddingMP2"><img src="/src/images/mp20.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp30.png" data-lightbox="weddingMP3"><img src="/src/images/mp30.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp22.png" data-lightbox="weddingMP2"><img src="/src/images/mp22.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp24.png" data-lightbox="weddingMP2"><img src="/src/images/mp24.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp12.png" data-lightbox="weddingMP1" ><img src="/src/images/mp12.png" loading="lazy" alt="Wedding"> </a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- <footer>
+           <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/src/buttons/top.png" /> <p>Nach oben</p></button>
+           <div class="createdby">
+                <p> Copyright &copy;<script>document.write(new Date().getFullYear())</script>, Michael Wernitz</p>
+           </div>
+        </footer> -->
+
+
+
+        <script src="/src/scripts/lightbox-plus-jquery.min.js"></script>
+        <script src="/src/scripts/main.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+        <script type="text/javascript">
+            function iframeLoaded() {
+                var iFrameID = document.getElementById('idIframe');
+                if(iFrameID) {
+
+                      iFrameID.height = "";
+                      iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+                }
+            }
+            if (top != self)
+              top.location = self.location;
+          </script>
+
+    </body>
+</html>

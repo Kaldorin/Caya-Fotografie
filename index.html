@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />        
+        <link rel="stylesheet" href="/src/css/stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="/src/css/animations.css" type="text/css">
+        <link rel="stylesheet" href="/src/css/lightbox.min.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link href="//db.onlinewebfonts.com/c/e27d3314ddf0d6e702011c5dc3dd1fa7?family=Steelfish" rel="stylesheet" type="text/css"/>
+        
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        
+        <title> Caya Fotografie </title>
+
+        <style> 
+          .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+    
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 800px;
+            height: 400px;
+          }
+    
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+          }
+          @media screen and (max-width: 1200px){
+            
+            .swiper-slide{
+                width: 500px;
+                height: 300px; 
+            }
+          }
+            @media screen and (max-width: 900px){
+            
+            .swiper-slide{
+                width: 400px;
+                height: 300px; 
+            }
+            .swiper-pagination{
+                display: none;
+            }
+            }
+            @media screen and (max-width: 400px){
+            
+            .swiper-slide{
+                width: 100%;
+            }
+          }
+        </style>
+    </head>
+
+
+
+    <body>
+      <div class="navigation" >
+        <div class="navigation-bar">  
+              <ul class="navigation-item-list-left">
+                <li class="navigation-item"><a href="/pages/portfolio.html" class="core-text  navigation-text core-text-font"> Portfolio </a></li> 
+              </ul>
+
+              <a href="/index.html"> <img src="/src/images/logo.png"> </a>
+
+              <ul class="navigation-item-list-right">
+                <li class="navigation-item"><a href="/pages/aboutMe.html" class="core-text  navigation-text core-text-font"> Über mich </a></li> 
+              </ul>
+
+          </div>   
+        <!-- die inputs um den Slider zu Steuern -->
+          <input type="radio" name="slider" id="slide01" checked="checked">
+          <input type="radio" name="slider" id="slide02">
+          <input type="radio" name="slider" id="slide03">
+          
+          <ul class="navigation-slider">
+            <li>
+              <figure>
+                <img src="/src/images/mp11.png">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="/src/images/mp30.png">
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="/src/images/mp31.png">
+              </figure>
+            </li>
+          </ul>  
+        
+          <ul class="sliderControls">
+            <li><label for="slide01">1</label></li>
+            <li><label for="slide02">2</label></li>
+            <li><label for="slide03">3</label></li>
+          </ul>
+
+          <div class="navigation-title-mobile"> 
+            <div class="navigation"> 
+              <a href="/index.html"> <img src="/src/images/logo.png"> </a> 
+            </div>
+            <h3 class="core-text title-text">
+              Caya Fotografie
+            </h3>
+          </div>
+
+          
+      </div>
+
+      <!-- <div class="swiper mySwiper" id="swiper-div">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/src/images/mp11.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/src/images/mp26.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/src/images/mp30.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/src/images/mp22.png" />
+            </div>
+          </div>
+        <div class="swiper-pagination"></div> 
+      </div>        -->
+
+      <div class="main-frame" >
+        <div class="portfolio">
+          <div class="row">
+              <div class="column">
+                  <a href="/src/images/mp10.png" data-lightbox="weddingMP1" > <img src="/src/images/mp10.png" loading="lazy" alt="Wedding"> </a>
+                  <a href="/src/images/mp21.png" data-lightbox="weddingMP2"><img src="/src/images/mp21.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp13.png" data-lightbox="weddingMP1" ><img src="/src/images/mp13.png" loading="lazy" alt="Wedding"> </a>
+                  <a href="/src/images/mp23.png" data-lightbox="weddingMP2"><img src="/src/images/mp23.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp26.png" data-lightbox="weddingMP2"><img src="/src/images/mp26.png" loading="lazy" alt="Wedding"></a>
+              </div>
+              <div class="column">
+                  <a href="/src/images/mp31.png" data-lightbox="weddingMP3"><img src="/src/images/mp31.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/np10.png" data-lightbox="casual"><img src="/src/images/np10.png" loading="lazy" alt="Casual"></a>
+                  <a href="/src/images/np11.png" data-lightbox="casual"><img src="/src/images/np11.png" loading="lazy" alt="Casual"></a>
+                  <a href="/src/images/mp11.png" data-lightbox="weddingMP1" ><img src="/src/images/mp11.png" loading="lazy" alt="Wedding"> </a>
+                  <a href="/src/images/np12.png" data-lightbox="casual"><img src="/src/images/np12.png" loading="lazy" alt="Casual"></a>
+              </div>
+              <div class="column">
+                  <a href="/src/images/mp20.png" data-lightbox="weddingMP2"><img src="/src/images/mp20.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp30.png" data-lightbox="weddingMP3"><img src="/src/images/mp30.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp22.png" data-lightbox="weddingMP2"><img src="/src/images/mp22.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp24.png" data-lightbox="weddingMP2"><img src="/src/images/mp24.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp12.png" data-lightbox="weddingMP1" ><img src="/src/images/mp12.png" loading="lazy" alt="Wedding"> </a>
+              </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="profile-pic">
+            <img class="scale-in-hor-center" src="/src/images/profpic.png" alt="profile-picture">
+          </div>
+
+          <div class="profile-text">
+            <h1 class="core-text-font"> Über Mich!</h1>
+            <h3 class="core-text-font">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </h3>
+          </div>
+        </div>
+
+        <h2 class="contact-text core-text-font"> Kontaktiere mich! </h2>
+        <div class="contact-form">
+            <iframe src="/kontakt.php" id="idIframe" onload="iframeLoaded()" style="border: none; width: 100%;" allowfullscreen scrolling="no"> </iframe>          
+        </div>
+
+
+
+
+      </div>
+
+
+      <div class="mobile main-frame">
+        
+        <div class="profile-mobile">
+          <div class="profile-pic">
+            <img src="/src/images/profpic.png" alt="profile-picture">
+          </div>
+
+          <div class="profile-text">
+            <h1 class="core-text-font"> Über Mich!</h1>
+            <h3 class="core-text-font">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </h3>
+          </div>
+        </div>
+
+        <div class="mobile portfolio">
+          <div class="row">
+              <div class="column">
+                  <a href="/src/images/mp10.png" data-lightbox="weddingMP1" > <img src="/src/images/mp10.png" loading="lazy" alt="Wedding"> </a>
+                  <a href="/src/images/mp21.png" data-lightbox="weddingMP2"><img src="/src/images/mp21.png" loading="lazy" alt="Wedding"></a>
+                  <a href="/src/images/mp13.png" data-lightbox="weddingMP1" ><img src="/src/images/mp13.png" loading="lazy" alt="Wedding"> </a>
+              </div>
+              <div class="column">
+                <a href="/src/images/mp31.png" data-lightbox="weddingMP3"><img src="/src/images/mp31.png" loading="lazy" alt="Wedding"></a>
+                <a href="/src/images/mp23.png" data-lightbox="weddingMP2"><img src="/src/images/mp23.png" loading="lazy" alt="Wedding"></a>
+                <a href="/src/images/mp26.png" data-lightbox="weddingMP2"><img src="/src/images/mp26.png" loading="lazy" alt="Wedding"></a>
+              </div>
+          </div>
+        </div>
+
+        <h2 class="mobile contact-text core-text-font"> Kontaktiere mich! </h2>
+        <div class="mobile contact-form">
+            <iframe src="/kontakt.php" id="idIframe" onload="iframeLoaded()" style="border: none; width: 100%;" allowfullscreen scrolling="no"> </iframe>
+        </div>
+      </div>
+
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          },
+        });
+
+      
+      </script>
+      <script src="/src/scripts/main.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+      
+    </body>
+</html>
